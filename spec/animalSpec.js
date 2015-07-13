@@ -32,22 +32,23 @@ describe('Animal', function(){
 
    describe('#wakeUp', function(){
     it('should change state to awake', function(){
-
+      expect(animal.wakeUp()).toEqual(true);
     });
   });
 
   describe('#sleep', function(){
-    it('should initially be sleeping', function(){
-
+    it('should change state to asleep', function(){
+      expect(animal.sleep()).toEqual(false);
     });
   });
 
   describe('#feed', function(){
     it('should get fed if awake', function(){
-
+      animal.wakeUp();
+      expect(animal.feed()).toEqual('NOM NOM NOM');
     });
     it('not should get fed if sleeping', function(){
-
+      expect(animal.feed()).toEqual('ZZZZZZ');
     });
   });
 });

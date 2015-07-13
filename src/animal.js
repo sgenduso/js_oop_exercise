@@ -18,5 +18,22 @@ Animal.prototype.growUp = function () {
   return this.age;
 };
 
+Animal.prototype.wakeUp = function () {
+  this.awake = true;
+  return this.awake;
+};
+
+Animal.prototype.sleep = function () {
+  this.awake = false;
+  return this.awake;
+};
+
+Animal.prototype.feed = function () {
+  if (this.awake === true) {
+    return 'NOM NOM NOM';
+  } else {
+    return 'ZZZZZZ';
+  }
+};
 
 module.exports=Animal;
