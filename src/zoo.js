@@ -27,7 +27,7 @@ Zoo.prototype.isOpen = function () {
 };
 
 Zoo.prototype.addAnimal = function (animal) {
-  if (this.status === 'Open!' && animal instanceof Animal && this.animals[0] !== animal.kind) {
+  if (this.status === 'Open!' && animal instanceof Animal && this.animals.indexOf(animal.kind) == -1) {
     this.animals.push(animal.kind);
   }
     return this.animals;

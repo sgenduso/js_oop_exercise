@@ -60,7 +60,9 @@ describe('Zoo', function(){
     it('should not add duplicates', function(){
       zoo.open();
       zoo.addAnimal(pig);
-      expect(zoo.addAnimal(pig)).toEqual(['pig']);
+      zoo.addAnimal(lion);
+      zoo.addAnimal(pig);
+      expect(zoo.addAnimal(pig)).toEqual(['pig', 'lion']);
     });
   });
 
