@@ -2,7 +2,7 @@
 
 The idea of this lab is to get you comfortable with writing and implementing the basics of OOP in JavaScript. We will also review testing in the lab.
 
-Our **incredible** zoo will consist of two classes - a Zoo class and an Animal class. 
+Our **incredible** zoo will consist of two classes - a Zoo class and an Animal class.
 
 ### Each instance of an Animal should have the following properties and methods:
 
@@ -30,7 +30,7 @@ Our **incredible** zoo will consist of two classes - a Zoo class and an Animal c
 * removeAnimal() - a method that removes an animal from the animals array ONLY if the zoo is open.  
 
 
-## Steps
+## Steps:
 
 - First write the tests for the Animal class
 - Then write the code necessary to make the tests pass
